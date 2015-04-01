@@ -3,7 +3,7 @@ Java Module to calculate shortest path for airport baggage handling system.
 ***************************************************************
 This system/module is designed and developed by Manohar Satkar
 manohar.satkar@yahoo.com
-===============================================================================================================
+======================================================================================
 Given Problem :
 ***************************************************************
 
@@ -39,6 +39,7 @@ A10 A9 1
 A9 A8 1
 A8 A7 1
 A7 A6 1
+
 Section: Departures
 UA10 A1 MIA 08:00
 UA11 A1 LAX 09:00
@@ -49,12 +50,15 @@ UA15 A2 JFK 10:00
 UA16 A3 JFK 09:00
 UA17 A4 MHT 09:15
 UA18 A5 LAX 10:15
+
 Section: Bags
+Example Input
 0001 Concourse_A_Ticketing UA12
 0002 A5 UA17
 0003 A2 UA10
 0004 A8 UA18
 0005 A7 ARRIVAL
+
 Example Output:
 0001 Concourse_A_Ticketing A5 A1 : 11
 0002 A5 A1 A2 A3 A4 : 9
@@ -62,7 +66,7 @@ Example Output:
 0004 A8 A9 A10 A5 : 6
 0005 A7 A8 A9 A10 A5 BaggageClaim : 12
 
-=========================================================================================================
+==================================================================================
 **************************************
 This solution consists of below files:
 **************************************
@@ -77,7 +81,7 @@ DestinationNotValidException.java
 PathFinderServiceTest.java,InputHelper.java
 
 Description :
-===========================================================================================================
+==================================================================================
 This system used data model for Bag, Flight , Route, Edges, vertices in Conveyor / routing system. The input is
 considered as pojo defined.However as the problem indicates if input is in flat text file, that can be read into 
 model classes as well.
@@ -94,7 +98,7 @@ Assumptions :
 5. If the route has been busy or crowded baggage will not be reversed or re-directed, rather it will follow designed 
    path based on weight of edge in the system. 
 
-==========================================================================================
+================================================================================
 To Test this module:
 *******************************
 Create one Java project in eclipse.
@@ -103,6 +107,6 @@ Run PathFinderServiceTest.java .
 It will print output to console.
 If you need to change the input data e.g. Baggage Details , flight details modify InputHelper class for 
 respective data in it.
-=================================================END======================================
+=======================================END====================================
 
  
