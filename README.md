@@ -2,8 +2,8 @@
 Java Module to calculate shortest path for airport baggage handling system. 
 ***************************************************************
 This system/module is designed and developed by Manohar Satkar
-manohar.satkar@yahoo.com
-======================================================================================
+ manohar.satkar@yahoo.com
+***************************************************************
 Given Problem :
 ***************************************************************
 
