@@ -98,6 +98,7 @@ Assumptions :
 5. If the route has been busy or crowded baggage will not be reversed or re-directed, rather it will follow designed 
    path based on weight of edge in the system. 
 6. Appropriate Interfaces will be introduced in the system.
+7. Logging is not considered as scope of this work but we can use log4j frmework for logging.
 
 ================================================================================
 To Test this module:
