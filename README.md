@@ -74,8 +74,6 @@ RouteSystem.java
 PathFinder.java
 PathFinderService.java
 DestinationNotValidException.java
-*******************************
-Classes for Testing the module:
 PathFinderServiceTest.java,InputHelper.java
 ================================================================================================================
 This system used data model for Bag, Flight , Route, Edges, vertices in Conveyor / routing system. The input is
@@ -94,7 +92,7 @@ Assumptions :
 5. If the route has been busy or crowded baggage will not be reversed or re-directed, rather it will follow designed 
    path based on weight of edge in the system. 
 
-=================================================================================================
+============================================================================================
 To Test this module:
 *******************************
 Create one Java project in eclipse.
@@ -103,6 +101,6 @@ Run PathFinderServiceTest.java .
 It will print output to console.
 If you need to change the input data e.g. Baggage Details , flight details modify InputHelper class for 
 respective data in it.
-=================================================END==========================================
+=================================================END========================================
 
  
