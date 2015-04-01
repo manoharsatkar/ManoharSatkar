@@ -189,22 +189,22 @@ public class PathFinder {
 	    //Prepare adjencyMatrix from Route System 
 	    int node_matrix_length = 1+routeSystem.getVertices().size();
 	    int N = Integer.MAX_VALUE;	    
-	    int [][] adjencyMatrix2 = new int [node_matrix_length][node_matrix_length];	    
+	    int [][] adjencyMatrix = new int [node_matrix_length][node_matrix_length];	    
 	    
 	    ArrayList<Edge> edges = routeSystem.getEdges();
 	    for(Edge edge : edges){
 	    	int src =  1+ nodeMapList.indexOf(edge.getSource());
 			int dest = 1+ nodeMapList.indexOf(edge.getTarget());	    		
-			adjencyMatrix2[src][dest] = (int)edge.getWeightage();			
-			adjencyMatrix2[dest][src] = (int)edge.getWeightage();			
+			adjencyMatrix[src][dest] = (int)edge.getWeightage();			
+			adjencyMatrix[dest][src] = (int)edge.getWeightage();			
 	    }        
 	    for(int i=0;i< node_matrix_length ;i++ ){
 	    	for (int j =0; j<node_matrix_length ;j++){
-	    		if(adjencyMatrix2[i][j] == 0 && i != j ){
-	    			adjencyMatrix2[i][j] = N;
+	    		if(adjencyMatrix[i][j] == 0 && i != j ){
+	    			adjencyMatrix[i][j] = N;
 	    		}   		
 	    	}
 	    }		
-		return adjencyMatrix2;
+		return adjencyMatrix;
 	}
 }
