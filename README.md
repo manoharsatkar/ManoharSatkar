@@ -62,7 +62,7 @@ Example Output:
 0004 A8 A9 A10 A5 : 6
 0005 A7 A8 A9 A10 A5 BaggageClaim : 12
 
-===========================================================================================================
+=========================================================================================================
 **************************************
 This solution consists of below files:
 **************************************
@@ -75,7 +75,9 @@ PathFinder.java
 PathFinderService.java
 DestinationNotValidException.java
 PathFinderServiceTest.java,InputHelper.java
-================================================================================================================
+
+Description :
+===========================================================================================================
 This system used data model for Bag, Flight , Route, Edges, vertices in Conveyor / routing system. The input is
 considered as pojo defined.However as the problem indicates if input is in flat text file, that can be read into 
 model classes as well.
@@ -92,7 +94,7 @@ Assumptions :
 5. If the route has been busy or crowded baggage will not be reversed or re-directed, rather it will follow designed 
    path based on weight of edge in the system. 
 
-============================================================================================
+==========================================================================================
 To Test this module:
 *******************************
 Create one Java project in eclipse.
@@ -101,6 +103,6 @@ Run PathFinderServiceTest.java .
 It will print output to console.
 If you need to change the input data e.g. Baggage Details , flight details modify InputHelper class for 
 respective data in it.
-=================================================END========================================
+=================================================END======================================
 
  
