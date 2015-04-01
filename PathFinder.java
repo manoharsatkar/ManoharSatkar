@@ -82,7 +82,7 @@ public class PathFinder {
 	/**
 	 * Reset the data vehicles used for calculation.
 	 */
-	public void reset(){
+	private void reset(){
 		settled.clear();
 		unsettled.clear();
 		predecessors.clear();
